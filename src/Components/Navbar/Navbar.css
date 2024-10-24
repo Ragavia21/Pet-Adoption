@@ -1,0 +1,156 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    box-shadow: 0 1px 3px 2px black;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav-menu1
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    margin-left: auto;
+    padding: 50px; 
+}
+
+/* Logo Image */
+.navbar img {
+    width: 220px;
+    height: 95px;
+    margin-left: 0;
+}
+
+/* Logo Section */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Logo Text */
+.nav-logo p {
+    color: brown;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+    cursor: pointer;
+    display: block;
+}
+
+/* Desktop Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    margin-left: auto;
+}
+
+
+/* Hidden menu on mobile */
+.nav-menu {
+    display: none;
+}
+
+/* Mobile Menu (vertical) */
+.nav-menu.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 100vh;
+    width: 250px;
+    padding-top: 100px;
+    
+    z-index: 100;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Links */
+.nav-menu li {
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.nav-menu1 li {
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Link Styling */
+.nav-menu li a {
+    text-decoration: none;
+    color: rgb(71, 67, 67);
+    font-size: larger;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Hover Effect for Menu Items */
+.nav-menu li:hover {
+    color: white;
+    background-color: rgba(239, 233, 221, 0.8);
+
+}
+.nav-menu1 li:hover {
+    background-color: rgba(239, 177, 53, 0.8);
+    color: white;
+}
+.nav-menu1 li a {
+    text-decoration: none;
+    color: rgb(71, 67, 67);
+    font-size: larger;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.s1{
+    text-decoration: none;
+    color: rgb(71, 67, 67);
+    font-size: larger;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+}
+/* Cart Icon */
+.nav-login-cart img {
+    cursor: pointer;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .nav-menu.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: white;
+        width: 250px;
+        height: 100vh;
+        padding-top: 100px;
+        z-index: 100;
+    }
+}

@@ -1,0 +1,43 @@
+
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px; /* Adjust margin to reduce space between cards */
+}
+
+.card-deck .card {
+  margin: 0 10px 1rem;
+  margin-top: 20px; /* Adjusted margin to reduce space between cards */
+  border: 1px solid rgb(190, 184, 176);
+  box-shadow: 0 4px 8px rgba(161, 157, 157, 0.1); /* Added shaded effect */
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-deck .card {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+  }
+
+  button {
+    padding: 5px;
+    margin-bottom: 40px;
+    color:white;
+    background-color: #007BFF;
+  }
+}

@@ -1,0 +1,44 @@
+
+  
+  .card-deck2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px; /* Adjust margin to reduce space between cards */
+  }
+  
+  .card-deck2 .card {
+    margin: 0 10px 1rem;
+    margin-top: 20px; /* Adjusted margin to reduce space between cards */
+    border: 1px solid rgb(168, 162, 153);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shaded effect */
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck2 .card {
+      -ms-flex: 0 0 48.7%;
+      flex: 0 0 48.7%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck2 .card {
+      -ms-flex: 0 0 32%;
+      flex: 0 0 32%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card-deck2 .card {
+      -ms-flex: 0 0 24%;
+      flex: 0 0 24%;
+    }
+  
+    button {
+      padding: 5px;
+      margin-bottom: 30px;
+      color: white;
+      background-color: rgb(45, 105, 195);
+    }
+  }
+  
